@@ -10,7 +10,14 @@ const 부모1번 = (props) => {
     return(
 
         <>
-        <h3>props 예제 1번 확인하기</h3>
+            <h3>props 예제 1번 확인하기</h3>
+            {/* js 값이나 코드를 html 내부에 사용할 땐 {} 안에 작성 */ }
+            <ul>
+                <li>번호 : {props.num}</li>
+                <li>이름 : {props.name}</li>
+                <li>나이 : {props.age} 세</li>
+                <li>점수 : {props.score} 점</li>
+            </ul>
         </>
     )
 }
