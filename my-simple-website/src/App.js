@@ -1,11 +1,15 @@
 import logo from './logo.svg';
 import './App.css';
+import Game from './component/Game.js';
+import GameToStep from './component/GameToStep.js';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
        <h1>홈페이지 오신것을 환영합니다.</h1>
+       <Game/>
+       <GameToStep/>
       </header>
       <main>
         <section>

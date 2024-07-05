@@ -14,4 +14,3 @@ const 부모2번 = (props) => { //properties-> property -> props
         </div>
     );
 }
-export default 부모2번;
