@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import './Game.css';
 
 const GameToStep = () => {
     const [guess, setGuess] = useState('');
@@ -47,22 +48,22 @@ const GameToStep = () => {
     }
 
     return (
-        <div>
-            <h3>숫자 맞추기 게임 2단계</h3>
+        <div className='NumberGame'>
+            <h1>숫자 맞추기 게임 2단계</h1>
             <form onSubmit={handleSubmit}>
-                <input 
+                <input className='Numberinput'
                     type='number'
                     value={guess}
                     onChange={handleChange}
                     placeholder='1에서 30 사이의 숫자 입력하기'/>
 
-                    <button type='submit'>추측하기</button>
+                    <button type='submit' className='guessButton'>추측하기</button>
             </form>
             {/* message = 숫자를 맞췄는지 틀렸는지 확인하는 메세지 */}
             <p>{message}</p>
 
             
-            {isCorrect ? (<Link to='/game'><button>1단계로돌아가기</button></Link>) : (<button onClick={handleReStart}>재시작버튼</button>)}
+            {isCorrect ? (<Link to='/game'><button className='restart-button'>1단계로돌아가기</button></Link>) : (<button onClick={handleReStart} className='restart-button'>재시작버튼</button>)}
         </div>
     )
 }

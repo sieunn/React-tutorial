@@ -6,12 +6,12 @@ const NavBar = () => {
         <nav>
             <ul>
                 <li><Link to="/">Home</Link></li>
-                <li><Link to="/game">숫자 맞추기 게임</Link></li>
+                <li><Link to="/game">Guessing Numbers Game</Link></li>
                {/* 2단계 링크를 navbar에는 작성하지 않음
                     왜냐하면 1단계를 통과해야 2단계 링크를 보여줄 것이기 때문
                */}
-               <li><Link to="/todoList">할일목록 작성</Link></li>
-               <li><Link to="/tictactoe">TicTacToe게임</Link></li>
+               <li><Link to="/todoList">ToDo-List</Link></li>
+               <li><Link to="/tictactoe">TicTapToe Game</Link></li>
             </ul>
         </nav>
     )

@@ -1,0 +1,35 @@
+.NumberGame {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+  }
+  .Numberinput{
+    margin-right: 8px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.guessButton,
+.prevStep-button{
+    padding: 5px 10px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.NumberGame .restart-button{
+    margin-top: 20px;
+    padding: 3px 6px;
+    cursor: pointer;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .NumberGame .restart-button:hover {
+    background-color: #e53935;
+  }
