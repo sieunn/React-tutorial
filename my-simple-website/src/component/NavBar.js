@@ -12,6 +12,7 @@ const NavBar = () => {
                */}
                <li><Link to="/todoList">ToDo-List</Link></li>
                <li><Link to="/tictactoe">TicTapToe Game</Link></li>
+               <li><Link to="/typingTest">Typing Test</Link></li>
             </ul>
         </nav>
     )

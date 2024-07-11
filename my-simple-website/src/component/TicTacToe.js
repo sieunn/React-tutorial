@@ -29,6 +29,7 @@ const TicTapToe= () => {
   //게임 상태에 따라 사용자한테 보여줄 메세지 표현
   const [message, setMessage] = useState(''); //빈공간으로 놓기
 
+  const [timer, setTimer] = useState(10); //처음 초기 시간 설정
   const [isCorrect, setIsCorrect] = useState(false);
 
   const handleNumberClick = (number) => {
@@ -44,20 +45,34 @@ const TicTapToe= () => {
     } else {
      //틀렸을경우 메세지 보여주기
      setMessage('틀렸습니다. 다시 시도하세요.');
+     setTimer(10);
     }
   };
+
+  useEffect(()=>{
+    let countdown;
+    if(timer > 0){
+      countdown = setTimeout(()=>{
+        setTimer(timer -1);
+      },1000)
+    }else if(timer ===0){
+      alert("시간초과! 게임이 종료되었습니다.");
+    }
+  })
 
   const handleRestart = () => {
     setNumbers(shuffleArray([...Array(9).keys()].map(n => n + 1))); // 다시 초기 숫자 세팅
     setNextNumber(1); //번호 초기화
     setMessage(''); //메세지 초기화
     setIsCorrect(false);
+    setTimer(10);
   };
 
 
   return (
     <div className="tic-tap-container">
       <h1>TicTap 1단계</h1>
+      <div className='timer'>남은 시간 : {timer}초</div>
       <div className="grid">
       {numbers.map((number) => (
           <button key={number} onClick={() => handleNumberClick(number)} className="number-button">
