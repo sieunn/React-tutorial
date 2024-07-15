@@ -40,6 +40,12 @@ import {RefEx as Ref예제4번} from './component/R22_useRefEx.js';
 
 import Axios예제1번 from "./component/R25_AxiosEx1.js";
 import Axios_예제2번 from "./component/R26_AxiosEx2.js";
+import Fetch예제1번 from './component/R28_Fetch_ex.js';
+import Fetch예제2번 from './component/R29_Fetch_ex2.js';
+
+import Board from "./component/R30_PagiNation/Board.js";
+import Album from "./component/R31_PagiNationEx/Album.js";
+import Profile from './component/R32_Profile.js';
 
 
 
@@ -90,6 +96,9 @@ function App() {
      {/*<고블린/>*/}
      {/*<Axios예제1번/>*/}
      <Axios_예제2번/>
+     <Fetch예제1번 />
+     <Fetch예제2번 />
+      <Album />
     </div>
 
   );

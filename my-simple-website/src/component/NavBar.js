@@ -13,6 +13,7 @@ const NavBar = () => {
                <li><Link to="/todoList">ToDo-List</Link></li>
                <li><Link to="/tictactoe">TicTapToe Game</Link></li>
                <li><Link to="/typingTest">Typing Test</Link></li>
+               <li> <Link to="/movieRate">순위높은영화추천</Link></li>
             </ul>
         </nav>
     )
