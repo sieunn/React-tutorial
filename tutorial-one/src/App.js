@@ -34,6 +34,7 @@ import Ref예제1번 from './component/R19_useRef.js';
 import Ref예제2번 from './component/R20_useRefInput.js';
 import Ref예제3번 from './component/R21_useRefSignUp.js';
 import 고블린 from './component/R23_Dodgegobelin/Dodgegobelin.js';
+import Weather from "./component/weather.js";
 
 //R22_useRefEx -> {RefEx as Ref예제4번} from './component/R22_useRefEx.js';
 import {RefEx as Ref예제4번} from './component/R22_useRefEx.js';
@@ -95,10 +96,11 @@ function App() {
      {/*<Ref예제4번/>*/}
      {/*<고블린/>*/}
      {/*<Axios예제1번/>*/}
-     <Axios_예제2번/>
-     <Fetch예제1번 />
-     <Fetch예제2번 />
-      <Album />
+     {/*<Axios_예제2번/>*/}
+     {/*<Fetch예제1번 />*/}
+     {/*<Fetch예제2번 />*/}
+      {/*<Album />*/}
+      <Weather/>
     </div>
 
   );
