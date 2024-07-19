@@ -68,6 +68,11 @@
                 <div class="sky" id="skyIncheon"></div>
             </div>
 
+            <div id="weekResult" class="weekResult">
+                <div class="minTem" id="minTemperatuer"></div>
+                <div class="maxTem" id="maxTemperatuer"></div>
+            </div>
+
         </div>
     </div>
     <div class="koreaMap">
@@ -79,15 +84,19 @@
 
         async function fetchWeather(city, cityId) {
             const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+            const weekurl = `https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${API_KEY}`;
             try {
                 const response = await fetch(url);
+                const weekresponse = await fetch(weekurl);
                 const data = await response.json();
+                const weekdata = await weekresponse.json();
 
                 if (data.cod === 200) {
                     document.getElementById(`city${cityId}`).innerText = data.name;
                     document.getElementById(`temperature${cityId}`).innerText = Math.round(data.main.temp - 273.15) + "℃";
                     document.getElementById(`sky${cityId}`).innerText = data.weather[0].main;
                     document.getElementById(`result${cityId}`).style.display = 'block';
+                    document.getElementById('')
                 } else {
                     alert(`위치를 찾을 수 없습니다. 에러 코드: ${data.cod}`);
                 }
@@ -101,6 +110,7 @@
         fetchWeather('Seoul', 'Seoul');
         fetchWeather('Busan', 'Busan');
         fetchWeather('Incheon', 'Incheon');
+
     </script>
 </body>
 

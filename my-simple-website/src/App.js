@@ -17,6 +17,7 @@ import TicTapToe from './component/TicTapToe/TicTacToe.js';
 import TicTacToeTwoStep from './component/TicTapToe/TicTacToeTwoStep.js';
 import TypingTest from './component/TypingTest.js';
 import MovieRating from './component/Movie/MovieGrade.js';
+import Coffee from './component/Projects/Coffee.js';
 
 function App() {
  
@@ -33,6 +34,7 @@ function App() {
         <Route path="/ttt-twoStep" element={<TicTacToeTwoStep/>}/>
         <Route path="/typingTest" element={<TypingTest/>}/>
         <Route path="/movieRate"    element =  { <MovieRating />  } />
+        <Route path="/project"    element =  { <Coffee />  } />
       </Routes>
       <Footer/>
     </div>
