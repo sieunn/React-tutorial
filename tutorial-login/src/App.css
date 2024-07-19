@@ -8,24 +8,29 @@
 }
 
 .signup-container{
-  position: absolute;
   width: 300px;
   padding: 10px;
+  position: absolute;
+
   background-color: white;
   border: 3px solid #ccc;
 }
-.signup-container > label {
+
+.signup-container > label{
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   padding: 5px 0;
 }
-.signup-container > label > input {
+
+.signup-container > label > input{
   flex-basis: 65%;
 }
-.signup-container button {
+
+.signup-container button{
   width: 100%;
 }
-.id-err {
+
+.id-error{
   color: red;
   font-weight: bold;
 }

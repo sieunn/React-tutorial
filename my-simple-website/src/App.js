@@ -1,14 +1,20 @@
-import logo from './logo.svg';
 import './App.css';
 import Game from './component/Game.js';
 import GameToStep from './component/GameToStep.js';
 import { Route, Routes } from 'react-router-dom';
 import Home from './component/Home.js';
-import NavBar from './component/NavBar.js';
-import Header from './component/Header.js';
+import NavBar from './component/Layout/NavBar.js';
+import Footer from './component/Layout/Footer.js';
+/*
+ERROR in ./src/App.js 10:0-43  -> 에러가 발생한 파일 위치
+Module not found: Error: Can't resolve './component/NavBar.js' in 'C:\Users\user1\react-workspace\my-simple-website\src'
+-> 에러가 발생한 파일위치 App.js에서 해당 파일 위치 찾을 수 없음 이라는 에러 발생
+
+*/
+import Header from './component/Layout/Header.js';
 import TodoList from './component/TodoList.js';
-import TicTapToe from './component/TicTacToe.js';
-import TicTacToeTwoStep from './component/TicTacToeTwoStep.js';
+import TicTapToe from './component/TicTapToe/TicTacToe.js';
+import TicTacToeTwoStep from './component/TicTapToe/TicTacToeTwoStep.js';
 import TypingTest from './component/TypingTest.js';
 import MovieRating from './component/Movie/MovieGrade.js';
 
@@ -28,6 +34,7 @@ function App() {
         <Route path="/typingTest" element={<TypingTest/>}/>
         <Route path="/movieRate"    element =  { <MovieRating />  } />
       </Routes>
+      <Footer/>
     </div>
   )
  

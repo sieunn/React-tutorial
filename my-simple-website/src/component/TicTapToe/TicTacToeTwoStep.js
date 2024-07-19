@@ -1,6 +1,6 @@
 import React, {useEffect,useState } from 'react';
 import { Link } from 'react-router-dom';
-import './Tic-Tac-Toe.css';
+import '../Tic-Tac-Toe.css';
 
 const shuffleArray = (array) => {
 

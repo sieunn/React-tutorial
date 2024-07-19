@@ -1,0 +1,78 @@
+body{
+    margin: 0;
+}
+.home-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.home-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.home-header h1{
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+.home-header p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* ********소개 섹션 1 사진없음 ********** */
+.home-about-one, .home-about-two{
+    margin-bottom: 40px;
+}
+.home-about-one h2, .home-about-two h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 10px;
+}
+.home-about-one p{
+    font-size: 20px;
+    color: #444;
+}
+
+/*  ********소개 섹션 2 사진있음********** */
+/* 
+소개 섹션에서 1과 2가 동일한 css를 보유할 때는
+소개섹션1클래스이름, 소개섹션2클래스이름{
+    소개섹션1,2에 동일하게 작성할 css 코드 작성
+}
+*/
+.home-about-two .about-row {
+    display: flex;
+    align-items: center;
+}
+
+.home-about-two .about-image{
+    flex: 1;
+    text-align: center;
+}
+.home-about-two .about-image{
+    max-width: 100%;
+    height: auto;
+    /*높이는 가로에 맞춰 자동 크기 조정*/
+    border-radius: 10px;
+}
+.home-about-two .about-text{
+    flex: 2;
+    padding-left: 20px;
+}
+.home-about-two .about-text p {
+    font-size: 14px;
+    color: #444;
+}
+
+
+
+
+
+
+
+
+
+
